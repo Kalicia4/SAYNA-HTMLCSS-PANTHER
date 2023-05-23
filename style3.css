@@ -1,0 +1,243 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(7,51,140,1) 100%);
+}
+h1{
+    color: #f6e5f6;
+    font-family: 'Beyno' ;
+    font-weight: thin;
+}
+p{
+    color: white;
+    font-family: 'cantarella' ;
+}
+h2{
+    color: #9E91B7;
+    font-family: 'Beyno' ;
+}
+
+@font-face {
+    font-family: 'Beyno' ;
+    src: url('./fonts/beyno/BEYNO.otf');
+}
+@font-face {
+    font-family: 'cantarella' ;
+    src: url('./fonts/cantarella/Cantarell-Regular.ttf');
+}
+@font-face {
+    font-family: 'panthera' ;
+    src: url('./fonts/panther/PantheraRegular-MVZ9J.ttf');
+}
+
+header{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(7,51,140,1) 100%);
+    padding: 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav a{
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Beyno' ;
+    
+}
+.nav a:hover{
+    text-decoration: underline;
+    color: #9E91B7 ;
+}
+#actif{
+    text-decoration: underline;
+    color: #9E91B7 ;
+}
+
+/* principal */
+.partie1{
+    display: flex;
+    flex-direction: row;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(7,51,140,1) 100%);
+    height: 100vh;
+    /* width: 100vh; */
+}
+.gauche{
+    width: 50%;
+    background-image: url("./Illustrations + Logo/Enigme/Pantherenigme1.png");
+    background-size: cover;
+}
+.droite{
+    width: 50%;
+}
+.titre h1{
+    margin: 0%;
+    font-size: 64px;
+    color: #3D2DA6;
+}
+.titre{
+    padding: 10% 0% 5% 0%;
+}
+.rond1{
+     width: 100%;
+     height: 50%;
+     /* background-color: blueviolet;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-color: aquamarine; */
+    background-image: url("./Illustrations + Logo/Enigme/Pantherenigme2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rond1 p {
+    width: 75%;
+    /* padding: 25%; */
+    font-size: 14px;
+    margin: 0%;
+}
+
+.partie2{
+    /* background-color: bisque; */
+    padding: 10% 15%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(7,51,140,1) 100%);
+}
+.row3{
+    /* background-color: blue; */
+    margin-bottom: 5%;
+}
+.row3 img{
+    width: 75%;
+}
+.row4{
+    display: flex;
+    flex-direction: row;
+}
+.rond2{
+    /* background-color: brown; */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url("./Illustrations + Logo/Enigme/Pantherenigme2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.rond2 p{
+   font-size: 12px;
+}
+.left1 form{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+form input[type = "text"]{
+   
+    padding: 3% 3% 3% 8%;
+    border-radius: 38px;
+    background-color: transparent;
+    border: white solid 1px;
+
+}
+input{
+    color: white;
+}
+input::placeholder{
+    color: white;
+}
+.btn{
+    /* background-color: cadetblue; */
+    text-align: center;
+    margin-top: 10%;
+}
+.btn input[type = "submit"]{
+    padding: 3%; 
+    width: 40%;
+    border-radius: 38px;
+    background-color: #F2CEF2;
+    color: #3D2DA6;
+    border: none;
+}
+.btn input[type = "submit"]:hover{
+    box-shadow: 0px 0px 20px #F2CEF2;
+    cursor: pointer;
+}
+.btn input[value = "ENVOYER"]{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer{
+    height: 50vh;
+    background-image: url("./Illustrations + Logo/All pages/back_footer.png");
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+.rond img{
+    height: auto;
+    width: 25vw;
+}
+.rond{
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 45vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./Illustrations + Logo/All pages/footer1.png");
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    width: 50%;
+    height: 50%;
+}
+.right{
+    margin-left: 25%;
+    width: 100%;
+    padding-top: 3%;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.propos{
+    display: flex;
+    flex-direction: column;
+}
+.retrouver{
+    width: 100%;
+    margin-left: 25%;
+}
+.icones a, .retrouver h3{
+    margin-left: 5%;
+}
+.row2{
+    padding-top: 15%;
+}
+footer h3, .propos a{
+    color: white;
+    text-decoration: none;
+}
+
